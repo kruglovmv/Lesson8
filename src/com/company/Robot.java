@@ -36,7 +36,7 @@ public class Robot implements Cross{
     }
 
     @Override
-    public boolean cross(Object obstruction) {
+    public boolean cross(Obstruction obstruction) {
         if (obstruction instanceof Wall) return this.jump((Wall) obstruction);
         else  return this.run((Treadmill) obstruction);
     }
